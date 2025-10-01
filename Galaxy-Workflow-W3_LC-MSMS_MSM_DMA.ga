@@ -1,0 +1,1906 @@
+{
+    "a_galaxy_workflow": "true",
+    "annotation": "",
+    "format-version": "0.1",
+    "name": "W3_LC-MSMS_MSM_DMA",
+    "steps": {
+        "0": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 0,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "Adducts (string)"
+                }
+            ],
+            "label": "Adducts (string)",
+            "name": "Input parameter",
+            "outputs": [],
+            "position": {
+                "bottom": -372.72918701171875,
+                "height": 82,
+                "left": 462.79168701171875,
+                "right": 662.7916870117188,
+                "top": -454.72918701171875,
+                "width": 200,
+                "x": 462.79168701171875,
+                "y": -454.72918701171875
+            },
+            "tool_id": null,
+            "tool_state": "{\"parameter_type\": \"text\", \"optional\": false}",
+            "tool_version": null,
+            "type": "parameter_input",
+            "uuid": "6dc022ff-826f-4b09-b12f-ff968b5237ef",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "24cc5b7b-88d9-474f-b56c-5c66053a9837"
+                }
+            ]
+        },
+        "1": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 1,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "XCMS mzdiff (findChromPeaks)"
+                }
+            ],
+            "label": "XCMS mzdiff (findChromPeaks)",
+            "name": "Input parameter",
+            "outputs": [],
+            "position": {
+                "bottom": 440.0208435058594,
+                "height": 102,
+                "left": 1201.6458740234375,
+                "right": 1401.6458740234375,
+                "top": 338.0208435058594,
+                "width": 200,
+                "x": 1201.6458740234375,
+                "y": 338.0208435058594
+            },
+            "tool_id": null,
+            "tool_state": "{\"parameter_type\": \"float\", \"optional\": false}",
+            "tool_version": null,
+            "type": "parameter_input",
+            "uuid": "713c0801-f94a-438f-90c2-e994e69b18cd",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "5b2a5861-119d-4227-949a-f34f2caa7fa7"
+                }
+            ]
+        },
+        "2": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 2,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "XCMS ppm"
+                }
+            ],
+            "label": "XCMS ppm",
+            "name": "Input parameter",
+            "outputs": [],
+            "position": {
+                "bottom": 808.875,
+                "height": 62,
+                "left": 1129.7083740234375,
+                "right": 1329.7083740234375,
+                "top": 746.875,
+                "width": 200,
+                "x": 1129.7083740234375,
+                "y": 746.875
+            },
+            "tool_id": null,
+            "tool_state": "{\"parameter_type\": \"float\", \"optional\": false}",
+            "tool_version": null,
+            "type": "parameter_input",
+            "uuid": "2ce13e34-9083-4e3a-80c5-ab8d06999f6b",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "70561293-3995-46c3-a2e1-e4ad1bee3520"
+                }
+            ]
+        },
+        "3": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 3,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "LC-MS and LC-MS/MS data files (.mzML)"
+                }
+            ],
+            "label": "LC-MS and LC-MS/MS data files (.mzML)",
+            "name": "Input dataset collection",
+            "outputs": [],
+            "position": {
+                "bottom": 1526.0625,
+                "height": 82,
+                "left": -848.9583740234375,
+                "right": -648.9583740234375,
+                "top": 1444.0625,
+                "width": 200,
+                "x": -848.9583740234375,
+                "y": 1444.0625
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"collection_type\": \"list\"}",
+            "tool_version": null,
+            "type": "data_collection_input",
+            "uuid": "5a175721-3052-4722-a298-036709c570a8",
+            "workflow_outputs": []
+        },
+        "4": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 4,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "Sample list (.tsv, .tabular)"
+                }
+            ],
+            "label": "Sample list (.tsv, .tabular)",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "bottom": 899.8125,
+                "height": 82,
+                "left": 1539.5,
+                "right": 1739.5,
+                "top": 817.8125,
+                "width": 200,
+                "x": 1539.5,
+                "y": 817.8125
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "de28111c-3501-4913-bd23-cbb26cabf31e",
+            "workflow_outputs": []
+        },
+        "5": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 5,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "XCMS bw (grouping)"
+                }
+            ],
+            "label": "XCMS bw (grouping)",
+            "name": "Input parameter",
+            "outputs": [],
+            "position": {
+                "bottom": 445.8125,
+                "height": 102,
+                "left": 2051.27099609375,
+                "right": 2251.27099609375,
+                "top": 343.8125,
+                "width": 200,
+                "x": 2051.27099609375,
+                "y": 343.8125
+            },
+            "tool_id": null,
+            "tool_state": "{\"parameter_type\": \"float\", \"optional\": false}",
+            "tool_version": null,
+            "type": "parameter_input",
+            "uuid": "e377db58-0c21-4519-924e-d7c680fd9cde",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "5fe47b7b-b319-42c5-a897-22eccd287a4e"
+                }
+            ]
+        },
+        "6": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 6,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "Polarity (long)"
+                }
+            ],
+            "label": "Polarity (long)",
+            "name": "Input parameter",
+            "outputs": [],
+            "position": {
+                "bottom": 433.2083435058594,
+                "height": 62,
+                "left": -2077.14599609375,
+                "right": -1877.14599609375,
+                "top": 371.2083435058594,
+                "width": 200,
+                "x": -2077.14599609375,
+                "y": 371.2083435058594
+            },
+            "tool_id": null,
+            "tool_state": "{\"parameter_type\": \"text\", \"optional\": false}",
+            "tool_version": null,
+            "type": "parameter_input",
+            "uuid": "e6da90d4-9180-4a76-b460-7cb06fa301ee",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "ddc1d971-0733-4262-9a76-278f1e2520c5"
+                }
+            ]
+        },
+        "7": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 7,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "Polarity (short)"
+                }
+            ],
+            "label": "Polarity (short)",
+            "name": "Input parameter",
+            "outputs": [],
+            "position": {
+                "bottom": 217.875,
+                "height": 62,
+                "left": 2228.791748046875,
+                "right": 2428.791748046875,
+                "top": 155.875,
+                "width": 200,
+                "x": 2228.791748046875,
+                "y": 155.875
+            },
+            "tool_id": null,
+            "tool_state": "{\"restrictions\": [\"pos\", \"neg\"], \"parameter_type\": \"text\", \"optional\": false}",
+            "tool_version": null,
+            "type": "parameter_input",
+            "uuid": "148283c0-7faa-4787-a597-87d2aaec5b29",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "cb84864c-6018-44ad-a493-83d644f3fe68"
+                }
+            ]
+        },
+        "8": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 8,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "XCMS mzwid (grouping)"
+                }
+            ],
+            "label": "XCMS mzwid (grouping)",
+            "name": "Input parameter",
+            "outputs": [],
+            "position": {
+                "bottom": 985.6875,
+                "height": 102,
+                "left": 2079.52099609375,
+                "right": 2279.52099609375,
+                "top": 883.6875,
+                "width": 200,
+                "x": 2079.52099609375,
+                "y": 883.6875
+            },
+            "tool_id": null,
+            "tool_state": "{\"parameter_type\": \"float\", \"optional\": false}",
+            "tool_version": null,
+            "type": "parameter_input",
+            "uuid": "ffb08653-f49d-4a50-91da-21e62299c4fb",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "b0d27b61-97a8-4bf8-b535-a1784d516001"
+                }
+            ]
+        },
+        "9": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 9,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "Adduct list (.tsv, .tabular)"
+                }
+            ],
+            "label": "Adduct list (.tsv, .tabular)",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "bottom": -665.4791870117188,
+                "height": 82,
+                "left": 2342.89599609375,
+                "right": 2542.89599609375,
+                "top": -747.4791870117188,
+                "width": 200,
+                "x": 2342.89599609375,
+                "y": -747.4791870117188
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "863c80b1-c287-4b12-91c1-921f9ba11054",
+            "workflow_outputs": []
+        },
+        "10": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/computational-metabolomics/mspurity_puritya/mspurity_puritya/1.16.2+galaxy1",
+            "errors": null,
+            "id": 10,
+            "input_connections": {
+                "source": {
+                    "id": 3,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "msPurity.purityA",
+            "outputs": [
+                {
+                    "name": "purityA_output_tsv",
+                    "type": "tsv"
+                },
+                {
+                    "name": "purityA_output_rdata",
+                    "type": "rdata"
+                }
+            ],
+            "position": {
+                "bottom": 306.2083435058594,
+                "height": 203.33334350585938,
+                "left": -918.3333740234375,
+                "right": -718.3333740234375,
+                "top": 102.875,
+                "width": 200,
+                "x": -918.3333740234375,
+                "y": 102.875
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/computational-metabolomics/mspurity_puritya/mspurity_puritya/1.16.2+galaxy1",
+            "tool_shed_repository": {
+                "changeset_revision": "55f1691db108",
+                "name": "mspurity_puritya",
+                "owner": "computational-metabolomics",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"ilim\": \"0.05\", \"isotopes\": {\"isotopes\": \"exclude_default\", \"__current_case__\": 1}, \"iw_norm\": \"none\", \"mostIntense\": \"true\", \"nearest\": \"true\", \"offsets\": {\"offsets\": \"auto\", \"__current_case__\": 1}, \"ppmInterp\": \"7.0\", \"source\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.16.2+galaxy1",
+            "type": "tool",
+            "uuid": "ffa8261c-e7ab-4e30-ab79-f14b8c953448",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "purityA_output_rdata",
+                    "uuid": "ea560985-5f7b-4229-ba77-be3164f908b6"
+                },
+                {
+                    "label": null,
+                    "output_name": "purityA_output_tsv",
+                    "uuid": "76ad601a-8c92-406b-93ea-73e0eaaff962"
+                }
+            ]
+        },
+        "11": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/lecorguille/msnbase_readmsdata/msnbase_readmsdata/2.16.1+galaxy0",
+            "errors": null,
+            "id": 11,
+            "input_connections": {
+                "input": {
+                    "id": 3,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "MSnbase readMSData",
+            "outputs": [
+                {
+                    "name": "xsetRData",
+                    "type": "rdata.msnbase.raw"
+                },
+                {
+                    "name": "sampleMetadata",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "bottom": 1169.0833435058594,
+                "height": 223.33334350585938,
+                "left": 981.9791870117188,
+                "right": 1181.9791870117188,
+                "top": 945.75,
+                "width": 200,
+                "x": 981.9791870117188,
+                "y": 945.75
+            },
+            "post_job_actions": {
+                "DeleteIntermediatesActionxsetRData": {
+                    "action_arguments": {},
+                    "action_type": "DeleteIntermediatesAction",
+                    "output_name": "xsetRData"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/lecorguille/msnbase_readmsdata/msnbase_readmsdata/2.16.1+galaxy0",
+            "tool_shed_repository": {
+                "changeset_revision": "11ab2081bd4a",
+                "name": "msnbase_readmsdata",
+                "owner": "lecorguille",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"input\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "2.16.1+galaxy0",
+            "type": "tool",
+            "uuid": "bac831f9-b04c-4b13-9123-40718913c3d9",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "xsetRData",
+                    "uuid": "6c9fd179-2ae3-459f-bce9-486e020b2f17"
+                },
+                {
+                    "label": null,
+                    "output_name": "sampleMetadata",
+                    "uuid": "46546e34-6d33-4fac-9ea6-a5a106c0556d"
+                }
+            ]
+        },
+        "12": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_xcmsset/abims_xcms_xcmsSet/3.12.0+galaxy0",
+            "errors": null,
+            "id": 12,
+            "input_connections": {
+                "image": {
+                    "id": 11,
+                    "output_name": "xsetRData"
+                },
+                "methods|CentWaveAdv|mzdiff": {
+                    "id": 1,
+                    "output_name": "output"
+                },
+                "methods|ppm": {
+                    "id": 2,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "xcms findChromPeaks (xcmsSet)",
+            "outputs": [
+                {
+                    "name": "xsetRData",
+                    "type": "rdata.xcms.findchrompeaks"
+                },
+                {
+                    "name": "log",
+                    "type": "txt"
+                }
+            ],
+            "position": {
+                "bottom": 731.6250305175781,
+                "height": 413.3333435058594,
+                "left": 1562.6458740234375,
+                "right": 1762.6458740234375,
+                "top": 318.29168701171875,
+                "width": 200,
+                "x": 1562.6458740234375,
+                "y": 318.29168701171875
+            },
+            "post_job_actions": {
+                "DeleteIntermediatesActionxsetRData": {
+                    "action_arguments": {},
+                    "action_type": "DeleteIntermediatesAction",
+                    "output_name": "xsetRData"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_xcmsset/abims_xcms_xcmsSet/3.12.0+galaxy0",
+            "tool_shed_repository": {
+                "changeset_revision": "b02d1992a43a",
+                "name": "xcms_xcmsset",
+                "owner": "lecorguille",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"file_load_section\": {\"file_load_conditional\": {\"file_load_select\": \"no\", \"__current_case__\": 0}}, \"filterSection\": {\"filterAcquisitionNum\": \"\", \"filterRt\": \"\", \"filterMz\": \"\"}, \"image\": {\"__class__\": \"ConnectedValue\"}, \"methods\": {\"method\": \"CentWave\", \"__current_case__\": 0, \"ppm\": {\"__class__\": \"ConnectedValue\"}, \"peakwidth\": \"3,30\", \"CentWaveAdv\": {\"snthresh\": \"10\", \"prefilter\": \"3,100\", \"mzCenterFun\": \"wMean\", \"integrate\": \"1\", \"mzdiff\": {\"__class__\": \"ConnectedValue\"}, \"fitgauss\": \"false\", \"noise\": \"0\", \"verboseColumns\": \"false\", \"peaklist\": \"false\", \"CentWaveAdvROI\": {\"roiList\": {\"__class__\": \"RuntimeValue\"}, \"firstBaselineCheck\": \"true\", \"roiScales\": \"\"}}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "3.12.0+galaxy0",
+            "type": "tool",
+            "uuid": "f3af530e-8247-4956-9454-53a5c2bec568",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "xsetRData",
+                    "uuid": "f49fcb0c-c1d4-4402-9928-865a02893921"
+                },
+                {
+                    "label": null,
+                    "output_name": "log",
+                    "uuid": "e0f7fa2e-94c4-43fd-a4f7-e28a512ed928"
+                }
+            ]
+        },
+        "13": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_merge/xcms_merge/3.12.0+galaxy0",
+            "errors": null,
+            "id": 13,
+            "input_connections": {
+                "images": {
+                    "id": 12,
+                    "output_name": "xsetRData"
+                },
+                "sampleMetadata": {
+                    "id": 4,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "xcms findChromPeaks Merger",
+            "outputs": [
+                {
+                    "name": "xsetRData",
+                    "type": "rdata.xcms.findchrompeaks"
+                }
+            ],
+            "position": {
+                "bottom": 659.4791870117188,
+                "height": 183.33334350585938,
+                "left": 1861.8333740234375,
+                "right": 2061.8333740234375,
+                "top": 476.1458435058594,
+                "width": 200,
+                "x": 1861.8333740234375,
+                "y": 476.1458435058594
+            },
+            "post_job_actions": {
+                "DeleteIntermediatesActionxsetRData": {
+                    "action_arguments": {},
+                    "action_type": "DeleteIntermediatesAction",
+                    "output_name": "xsetRData"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_merge/xcms_merge/3.12.0+galaxy0",
+            "tool_shed_repository": {
+                "changeset_revision": "5bd125a3f3b0",
+                "name": "xcms_merge",
+                "owner": "lecorguille",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"file_load_section\": {\"file_load_conditional\": {\"file_load_select\": \"no\", \"__current_case__\": 0}}, \"images\": {\"__class__\": \"ConnectedValue\"}, \"sampleMetadata\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "3.12.0+galaxy0",
+            "type": "tool",
+            "uuid": "741be019-a8c9-4f0a-8208-e2c8bd5b11e2",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "xsetRData",
+                    "uuid": "6abc542a-d052-4de3-ae18-8fb28b6f9541"
+                }
+            ]
+        },
+        "14": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_group/abims_xcms_group/3.12.0+galaxy0",
+            "errors": null,
+            "id": 14,
+            "input_connections": {
+                "image": {
+                    "id": 13,
+                    "output_name": "xsetRData"
+                },
+                "methods|binSize": {
+                    "id": 8,
+                    "output_name": "output"
+                },
+                "methods|bw": {
+                    "id": 5,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "xcms groupChromPeaks (group)",
+            "outputs": [
+                {
+                    "name": "xsetRData",
+                    "type": "rdata.xcms.group"
+                },
+                {
+                    "name": "plotChromPeakDensity",
+                    "type": "pdf"
+                },
+                {
+                    "name": "variableMetadata",
+                    "type": "tabular"
+                },
+                {
+                    "name": "dataMatrix",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "bottom": 750.3333435058594,
+                "height": 343.3333435058594,
+                "left": 2351.39599609375,
+                "right": 2551.39599609375,
+                "top": 407,
+                "width": 200,
+                "x": 2351.39599609375,
+                "y": 407
+            },
+            "post_job_actions": {
+                "DeleteIntermediatesActionxsetRData": {
+                    "action_arguments": {},
+                    "action_type": "DeleteIntermediatesAction",
+                    "output_name": "xsetRData"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_group/abims_xcms_group/3.12.0+galaxy0",
+            "tool_shed_repository": {
+                "changeset_revision": "d45a786cbc40",
+                "name": "xcms_group",
+                "owner": "lecorguille",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"file_load_section\": {\"file_load_conditional\": {\"file_load_select\": \"no\", \"__current_case__\": 0}}, \"image\": {\"__class__\": \"ConnectedValue\"}, \"methods\": {\"method\": \"PeakDensity\", \"__current_case__\": 0, \"bw\": {\"__class__\": \"ConnectedValue\"}, \"minFraction\": \"0.5\", \"minSamples\": \"1\", \"binSize\": {\"__class__\": \"ConnectedValue\"}, \"PeakDensityAdv\": {\"maxFeatures\": \"50\"}}, \"peaklist\": {\"peaklistBool\": \"true\", \"__current_case__\": 0, \"convertRTMinute\": \"false\", \"numDigitsMZ\": \"4\", \"numDigitsRT\": \"0\", \"intval\": \"into\", \"naTOzero\": \"true\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "3.12.0+galaxy0",
+            "type": "tool",
+            "uuid": "f41ece0c-bc43-44d2-9b01-0aa7b6aec27e",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "variableMetadata",
+                    "uuid": "e4449097-5d93-4a87-911d-b669bc7d140a"
+                },
+                {
+                    "label": null,
+                    "output_name": "plotChromPeakDensity",
+                    "uuid": "8418751e-6dba-4b80-a3df-97b06fe78dd9"
+                },
+                {
+                    "label": null,
+                    "output_name": "xsetRData",
+                    "uuid": "2e86cbfc-7b22-4089-bf4f-9110d6ca4323"
+                },
+                {
+                    "label": null,
+                    "output_name": "dataMatrix",
+                    "uuid": "80ccfe6a-46a4-4abc-ad00-0b31f78623f1"
+                }
+            ]
+        },
+        "15": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/computational-metabolomics/mspurity_frag4feature/mspurity_frag4feature/1.16.2+galaxy1",
+            "errors": null,
+            "id": 15,
+            "input_connections": {
+                "pa": {
+                    "id": 10,
+                    "output_name": "purityA_output_rdata"
+                },
+                "xset": {
+                    "id": 14,
+                    "output_name": "xsetRData"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "msPurity.frag4feature",
+            "outputs": [
+                {
+                    "name": "frag4feature_output_tsv",
+                    "type": "tsv"
+                },
+                {
+                    "name": "frag4feature_output_rdata",
+                    "type": "rdata"
+                }
+            ],
+            "position": {
+                "bottom": 214.31250762939453,
+                "height": 253.33334350585938,
+                "left": -640.1458740234375,
+                "right": -440.1458740234375,
+                "top": -39.020835876464844,
+                "width": 200,
+                "x": -640.1458740234375,
+                "y": -39.020835876464844
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/computational-metabolomics/mspurity_frag4feature/mspurity_frag4feature/1.16.2+galaxy1",
+            "tool_shed_repository": {
+                "changeset_revision": "e9fbb65451f6",
+                "name": "mspurity_frag4feature",
+                "owner": "computational-metabolomics",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"convert2RawRT\": \"false\", \"file_load_conditional\": {\"file_load_select\": \"no\", \"__current_case__\": 0}, \"intense\": \"true\", \"pa\": {\"__class__\": \"ConnectedValue\"}, \"plim\": \"0.0\", \"ppm\": \"10.0\", \"useGroup\": \"false\", \"xset\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.16.2+galaxy1",
+            "type": "tool",
+            "uuid": "bab29641-e3af-49b4-99df-39fdb02248be",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "frag4feature_output_tsv",
+                    "uuid": "611198a2-6961-40f1-a70c-1a52c16cef8a"
+                },
+                {
+                    "label": null,
+                    "output_name": "frag4feature_output_rdata",
+                    "uuid": "468ab914-3e13-41ea-8870-fe56a02ed50b"
+                }
+            ]
+        },
+        "16": {
+            "annotation": "",
+            "content_id": "addValue",
+            "errors": null,
+            "id": 16,
+            "input_connections": {
+                "input": {
+                    "id": 14,
+                    "output_name": "variableMetadata"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Add column",
+            "outputs": [
+                {
+                    "name": "out_file1",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "bottom": 443.5000228881836,
+                "height": 93.33333587646484,
+                "left": 2635.58349609375,
+                "right": 2835.58349609375,
+                "top": 350.16668701171875,
+                "width": 200,
+                "x": 2635.58349609375,
+                "y": 350.16668701171875
+            },
+            "post_job_actions": {},
+            "tool_id": "addValue",
+            "tool_state": "{\"exp\": \"intensity\", \"input\": {\"__class__\": \"ConnectedValue\"}, \"iterate\": \"no\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.0.0",
+            "type": "tool",
+            "uuid": "9ce91984-0d9a-456a-8d8b-ce97cd3e06ee",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "out_file1",
+                    "uuid": "20454111-d6db-4e02-b37f-4e978c0a150d"
+                }
+            ]
+        },
+        "17": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/computational-metabolomics/mspurity_filterfragspectra/mspurity_filterfragspectra/1.16.2+galaxy1",
+            "errors": null,
+            "id": 17,
+            "input_connections": {
+                "pa": {
+                    "id": 15,
+                    "output_name": "frag4feature_output_rdata"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "msPurity.filterFragSpectra",
+            "outputs": [
+                {
+                    "name": "filterFragSpectra_output_rdata",
+                    "type": "rdata"
+                },
+                {
+                    "name": "filterFragSpectra_output_prec_tsv",
+                    "type": "tsv"
+                },
+                {
+                    "name": "filterFragSpectra_output_frag_tsv",
+                    "type": "tsv"
+                }
+            ],
+            "position": {
+                "bottom": 265.1041717529297,
+                "height": 393.3333435058594,
+                "left": -370.04168701171875,
+                "right": -170.04168701171875,
+                "top": -128.2291717529297,
+                "width": 200,
+                "x": -370.04168701171875,
+                "y": -128.2291717529297
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/computational-metabolomics/mspurity_filterfragspectra/mspurity_filterfragspectra/1.16.2+galaxy1",
+            "tool_shed_repository": {
+                "changeset_revision": "2e10c13085c9",
+                "name": "mspurity_filterfragspectra",
+                "owner": "computational-metabolomics",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"allfrag\": \"true\", \"ilim\": \"0.0\", \"pa\": {\"__class__\": \"ConnectedValue\"}, \"plim\": \"0.0\", \"ra\": \"0.0\", \"rmp\": \"false\", \"snmeth\": \"median\", \"snr\": \"0.0\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.16.2+galaxy1",
+            "type": "tool",
+            "uuid": "d2ff21c6-e2a9-49c1-b4e0-6a5f583b672a",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "filterFragSpectra_output_rdata",
+                    "uuid": "297c6814-55e5-4db6-b82f-b9b4c068e5ff"
+                },
+                {
+                    "label": null,
+                    "output_name": "filterFragSpectra_output_prec_tsv",
+                    "uuid": "58ced043-844c-490f-a36f-73836a3fcef4"
+                },
+                {
+                    "label": null,
+                    "output_name": "filterFragSpectra_output_frag_tsv",
+                    "uuid": "44130069-0bc2-457e-8772-b87648dcfca6"
+                }
+            ]
+        },
+        "18": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/1.1.2",
+            "errors": null,
+            "id": 18,
+            "input_connections": {
+                "infile": {
+                    "id": 16,
+                    "output_name": "out_file1"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Replace",
+            "outputs": [
+                {
+                    "name": "outfile",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "bottom": 458.6666793823242,
+                "height": 93.33333587646484,
+                "left": 2950.041748046875,
+                "right": 3150.041748046875,
+                "top": 365.3333435058594,
+                "width": 200,
+                "x": 2950.041748046875,
+                "y": 365.3333435058594
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/1.1.2",
+            "tool_shed_repository": {
+                "changeset_revision": "0a8c6b61f0f4",
+                "name": "text_processing",
+                "owner": "bgruening",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"caseinsensitive\": \"false\", \"find_pattern\": \"intensity\", \"global\": \"false\", \"infile\": {\"__class__\": \"ConnectedValue\"}, \"is_regex\": \"false\", \"replace_pattern\": \"1\", \"searchwhere\": {\"searchwhere_select\": \"line\", \"__current_case__\": 0}, \"skip_first_line\": \"true\", \"wholewords\": \"false\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.1.2",
+            "type": "tool",
+            "uuid": "edf37642-29f1-4b77-a330-16a382a5bdd7",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "outfile",
+                    "uuid": "8e164a26-5e1f-4e70-aa41-df80af1aec11"
+                }
+            ]
+        },
+        "19": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/computational-metabolomics/mspurity_averagefragspectra/mspurity_averagefragspectra/1.16.2+galaxy1",
+            "errors": null,
+            "id": 19,
+            "input_connections": {
+                "pa": {
+                    "id": 17,
+                    "output_name": "filterFragSpectra_output_rdata"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "msPurity.averageFragSpectra",
+            "outputs": [
+                {
+                    "name": "averageFragSpectra_output_rdata",
+                    "type": "rdata"
+                },
+                {
+                    "name": "averageFragSpectra_output_tsv",
+                    "type": "tsv"
+                }
+            ],
+            "position": {
+                "bottom": 269.2083435058594,
+                "height": 283.3333435058594,
+                "left": -92.08333587646484,
+                "right": 107.91666412353516,
+                "top": -14.125,
+                "width": 200,
+                "x": -92.08333587646484,
+                "y": -14.125
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/computational-metabolomics/mspurity_averagefragspectra/mspurity_averagefragspectra/1.16.2+galaxy1",
+            "tool_shed_repository": {
+                "changeset_revision": "94eb1fcfde88",
+                "name": "mspurity_averagefragspectra",
+                "owner": "computational-metabolomics",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"av\": \"median\", \"av_level\": \"intra\", \"minfrac\": \"0.5\", \"minnum\": \"1\", \"pa\": {\"__class__\": \"ConnectedValue\"}, \"ppm\": \"5.0\", \"ra\": \"0.0\", \"rmp\": \"true\", \"snr\": \"0.0\", \"sumi\": \"false\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.16.2+galaxy1",
+            "type": "tool",
+            "uuid": "409304f8-c375-4d77-971c-63835b2ee9c4",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "averageFragSpectra_output_rdata",
+                    "uuid": "5a32583e-040e-4fe7-9e06-0f826c1953ac"
+                },
+                {
+                    "label": null,
+                    "output_name": "averageFragSpectra_output_tsv",
+                    "uuid": "1b8cfd9b-18df-4e27-9419-6fd70d155eb2"
+                }
+            ]
+        },
+        "20": {
+            "annotation": "",
+            "content_id": "beamspy",
+            "errors": null,
+            "id": 20,
+            "input_connections": {
+                "intensity_matrix": {
+                    "id": 14,
+                    "output_name": "dataMatrix"
+                },
+                "ion_mode": {
+                    "id": 7,
+                    "output_name": "output"
+                },
+                "library_adducts": {
+                    "id": 9,
+                    "output_name": "output"
+                },
+                "peaklist": {
+                    "id": 18,
+                    "output_name": "outfile"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "BEAMSpy",
+            "outputs": [
+                {
+                    "name": "output_sqlite",
+                    "type": "sqlite"
+                },
+                {
+                    "name": "output_summary_mr_mc",
+                    "type": "tsv"
+                },
+                {
+                    "name": "output_charts",
+                    "type": "pdf"
+                }
+            ],
+            "position": {
+                "bottom": 629.4791870117188,
+                "height": 383.3333435058594,
+                "left": 3265.45849609375,
+                "right": 3465.45849609375,
+                "top": 246.14584350585938,
+                "width": 200,
+                "x": 3265.45849609375,
+                "y": 246.14584350585938
+            },
+            "post_job_actions": {},
+            "tool_id": "beamspy",
+            "tool_state": "{\"annotate_compounds\": {\"condi\": {\"flag\": \"true\", \"__current_case__\": 0, \"ppm\": \"5.0\", \"condi\": {\"source\": \"databases\", \"__current_case__\": 0, \"db_name\": [\"hmdb_full_v4_0_v1\"]}}}, \"annotate_molecular_formulae\": {\"condi\": {\"flag\": \"false\", \"__current_case__\": 1}}, \"annotate_peak_patterns\": {\"condi\": {\"flag\": \"false\", \"__current_case__\": 1}}, \"group_features\": {\"condi\": {\"flag\": \"false\", \"__current_case__\": 1}}, \"intensity_matrix\": {\"__class__\": \"ConnectedValue\"}, \"ion_mode\": {\"__class__\": \"ConnectedValue\"}, \"library_adducts\": {\"__class__\": \"ConnectedValue\"}, \"peaklist\": {\"__class__\": \"ConnectedValue\"}, \"summary\": {\"mr_mc\": \"true\", \"sr_mc\": \"false\", \"sr_sc\": \"false\", \"convert_rt\": \"skip\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.0.0+galaxy0",
+            "type": "tool",
+            "uuid": "2d413b0b-7c51-422d-bd3a-a884aa04828a",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output_summary_mr_mc",
+                    "uuid": "26927ab8-a924-4a7e-95b8-29ac9de9833c"
+                },
+                {
+                    "label": null,
+                    "output_name": "output_sqlite",
+                    "uuid": "9a4682c3-e8f3-492a-aac9-8ce27e5fed97"
+                },
+                {
+                    "label": null,
+                    "output_name": "output_charts",
+                    "uuid": "027781f3-ab08-4992-8c6a-6741e62cc895"
+                }
+            ]
+        },
+        "21": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/computational-metabolomics/mspurity_averagefragspectra/mspurity_averagefragspectra/1.16.2+galaxy1",
+            "errors": null,
+            "id": 21,
+            "input_connections": {
+                "pa": {
+                    "id": 19,
+                    "output_name": "averageFragSpectra_output_rdata"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "msPurity.averageFragSpectra",
+            "outputs": [
+                {
+                    "name": "averageFragSpectra_output_rdata",
+                    "type": "rdata"
+                },
+                {
+                    "name": "averageFragSpectra_output_tsv",
+                    "type": "tsv"
+                }
+            ],
+            "position": {
+                "bottom": 316.1458435058594,
+                "height": 283.3333435058594,
+                "left": 185.9166717529297,
+                "right": 385.9166717529297,
+                "top": 32.8125,
+                "width": 200,
+                "x": 185.9166717529297,
+                "y": 32.8125
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/computational-metabolomics/mspurity_averagefragspectra/mspurity_averagefragspectra/1.16.2+galaxy1",
+            "tool_shed_repository": {
+                "changeset_revision": "94eb1fcfde88",
+                "name": "mspurity_averagefragspectra",
+                "owner": "computational-metabolomics",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"av\": \"median\", \"av_level\": \"inter\", \"minfrac\": \"0.5\", \"minnum\": \"1\", \"pa\": {\"__class__\": \"ConnectedValue\"}, \"ppm\": \"5.0\", \"ra\": \"0.0\", \"rmp\": \"true\", \"snr\": \"0.0\", \"sumi\": \"false\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.16.2+galaxy1",
+            "type": "tool",
+            "uuid": "821aebce-22df-41fd-bc8f-71f02a52c3ed",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "averageFragSpectra_output_rdata",
+                    "uuid": "630b04fa-fa9e-4aec-9cf0-756fa42755cd"
+                },
+                {
+                    "label": null,
+                    "output_name": "averageFragSpectra_output_tsv",
+                    "uuid": "3abd2e54-2fc9-46ec-8d7e-9db3aca3e7a0"
+                }
+            ]
+        },
+        "22": {
+            "annotation": "",
+            "content_id": "Grep1",
+            "errors": null,
+            "id": 22,
+            "input_connections": {
+                "input": {
+                    "id": 20,
+                    "output_name": "output_summary_mr_mc"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Select",
+            "outputs": [
+                {
+                    "name": "out_file1",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "bottom": 493.6875228881836,
+                "height": 93.33333587646484,
+                "left": 3667.916748046875,
+                "right": 3867.916748046875,
+                "top": 400.35418701171875,
+                "width": 200,
+                "x": 3667.916748046875,
+                "y": 400.35418701171875
+            },
+            "post_job_actions": {
+                "HideDatasetActionout_file1": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "out_file1"
+                }
+            },
+            "tool_id": "Grep1",
+            "tool_state": "{\"input\": {\"__class__\": \"ConnectedValue\"}, \"invert\": \"false\", \"pattern\": \".*HMDB|compound_id.*\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.0.1",
+            "type": "tool",
+            "uuid": "1146f803-d452-45ea-a24d-0bdc9dfcbd69",
+            "workflow_outputs": []
+        },
+        "23": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/computational-metabolomics/mspurity_createmsp/mspurity_createmsp/1.16.2+galaxy1",
+            "errors": null,
+            "id": 23,
+            "input_connections": {
+                "include_adducts_custom": {
+                    "id": 0,
+                    "output_name": "output"
+                },
+                "rdata_input": {
+                    "id": 21,
+                    "output_name": "averageFragSpectra_output_rdata"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "msPurity.createMSP",
+            "outputs": [
+                {
+                    "name": "createMSP_output",
+                    "type": "msp"
+                }
+            ],
+            "position": {
+                "bottom": 49.208343505859375,
+                "height": 203.33334350585938,
+                "left": 464.04168701171875,
+                "right": 664.0416870117188,
+                "top": -154.125,
+                "width": 200,
+                "x": 464.04168701171875,
+                "y": -154.125
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/computational-metabolomics/mspurity_createmsp/mspurity_createmsp/1.16.2+galaxy1",
+            "tool_shed_repository": {
+                "changeset_revision": "8512923bdd37",
+                "name": "mspurity_createmsp",
+                "owner": "computational-metabolomics",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"adduct_split\": \"true\", \"filter\": \"true\", \"include_adducts\": null, \"include_adducts_custom\": {\"__class__\": \"ConnectedValue\"}, \"intensity_ra\": \"intensity_ra\", \"metadata_cond\": {\"metadata_select\": \"false\", \"__current_case__\": 1}, \"method\": \"av_inter\", \"msp_schema\": \"massbank\", \"rdata_input\": {\"__class__\": \"ConnectedValue\"}, \"xcms_group_cond\": {\"xcms_group_select\": \"false\", \"__current_case__\": 1}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.16.2+galaxy1",
+            "type": "tool",
+            "uuid": "8026c4a1-7189-4c93-a43f-b9d4be873d8a",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "createMSP_output",
+                    "uuid": "855aeee2-afbb-4015-9fea-e4c39567f89f"
+                }
+            ]
+        },
+        "24": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/computational-metabolomics/mspurity_createdatabase/mspurity_createdatabase/1.16.2+galaxy1",
+            "errors": null,
+            "id": 24,
+            "input_connections": {
+                "pa": {
+                    "id": 21,
+                    "output_name": "averageFragSpectra_output_rdata"
+                },
+                "xset_xa": {
+                    "id": 14,
+                    "output_name": "xsetRData"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool msPurity.createDatabase",
+                    "name": "pa"
+                },
+                {
+                    "description": "runtime parameter for tool msPurity.createDatabase",
+                    "name": "xset_xa"
+                }
+            ],
+            "label": null,
+            "name": "msPurity.createDatabase",
+            "outputs": [
+                {
+                    "name": "createDatabase_output_sqlite",
+                    "type": "sqlite"
+                }
+            ],
+            "position": {
+                "bottom": 677.2083435058594,
+                "height": 263.3333435058594,
+                "left": 477.5833435058594,
+                "right": 677.5833435058594,
+                "top": 413.875,
+                "width": 200,
+                "x": 477.5833435058594,
+                "y": 413.875
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/computational-metabolomics/mspurity_createdatabase/mspurity_createdatabase/1.16.2+galaxy1",
+            "tool_shed_repository": {
+                "changeset_revision": "0cc6b67dccb8",
+                "name": "mspurity_createdatabase",
+                "owner": "computational-metabolomics",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"camera_xcms\": \"xcms\", \"eic\": \"true\", \"file_load_conditional\": {\"file_load_select\": \"no\", \"__current_case__\": 0}, \"grp_peaklist_opt\": {\"grp_peaklist_opt\": \"no\", \"__current_case__\": 0}, \"pa\": {\"__class__\": \"RuntimeValue\"}, \"xset_xa\": {\"__class__\": \"RuntimeValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.16.2+galaxy1",
+            "type": "tool",
+            "uuid": "6375035f-4a02-4955-ab25-b1564882faf7",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "createDatabase_output_sqlite",
+                    "uuid": "44cc6422-43a1-4b46-99a2-1da07f29c2c6"
+                }
+            ]
+        },
+        "25": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/cut_columns/Cut1/1.0.2",
+            "errors": null,
+            "id": 25,
+            "input_connections": {
+                "input": {
+                    "id": 22,
+                    "output_name": "out_file1"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Cut",
+            "outputs": [
+                {
+                    "name": "out_file1",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "bottom": 294.4166793823242,
+                "height": 93.33333587646484,
+                "left": 3628.125,
+                "right": 3828.125,
+                "top": 201.08334350585938,
+                "width": 200,
+                "x": 3628.125,
+                "y": 201.08334350585938
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/cut_columns/Cut1/1.0.2",
+            "tool_shed_repository": {
+                "changeset_revision": "cec635fab700",
+                "name": "cut_columns",
+                "owner": "devteam",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"columnList\": \"c1-c14,c16\", \"delimiter\": \"T\", \"input\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.0.2",
+            "type": "tool",
+            "uuid": "01e78148-b7af-43b5-b6ff-c19bd36c3890",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "out_file1",
+                    "uuid": "f82be846-b8fd-4dc1-8a38-79320e2a3eed"
+                }
+            ]
+        },
+        "26": {
+            "annotation": "",
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/tomnl/msp_split/msp_split/0.0.2",
+            "errors": null,
+            "id": 26,
+            "input_connections": {
+                "in_msp": {
+                    "id": 23,
+                    "output_name": "createMSP_output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "msp_split",
+            "outputs": [
+                {
+                    "name": "multiple",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "bottom": 20.083343505859375,
+                "height": 133.33334350585938,
+                "left": 751.6458740234375,
+                "right": 951.6458740234375,
+                "top": -113.25,
+                "width": 200,
+                "x": 751.6458740234375,
+                "y": -113.25
+            },
+            "post_job_actions": {},
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/tomnl/msp_split/msp_split/0.0.2",
+            "tool_shed_repository": {
+                "changeset_revision": "f2683ec717fe",
+                "name": "msp_split",
+                "owner": "tomnl",
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"in_msp\": {\"__class__\": \"ConnectedValue\"}, \"n\": \"20\", \"x\": \"RECORD_TITLE:\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "0.0.2",
+            "type": "tool",
+            "uuid": "6ac77e2a-b4a1-4f83-b644-71aefd195da5",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "multiple",
+                    "uuid": "d2b4a7d3-d7b3-451f-ac9c-21c1a7713570"
+                }
+            ]
+        },
+        "27": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/computational-metabolomics/mspurity_spectralmatching/mspurity_spectralmatching/1.16.2+galaxy1",
+            "errors": null,
+            "id": 27,
+            "input_connections": {
+                "Library|l_filters|l_polarity_cond|l_polarity": {
+                    "id": 6,
+                    "output_name": "output"
+                },
+                "Query|q_dbPth_con|q_dbPth": {
+                    "id": 24,
+                    "output_name": "createDatabase_output_sqlite"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "msPurity.spectralMatching",
+            "outputs": [
+                {
+                    "name": "sqlite_results",
+                    "type": "sqlite"
+                },
+                {
+                    "name": "matches",
+                    "type": "tsv"
+                },
+                {
+                    "name": "xcms_matches",
+                    "type": "tsv"
+                }
+            ],
+            "position": {
+                "bottom": 440.5416793823242,
+                "height": 363.3333435058594,
+                "left": 780.375,
+                "right": 980.375,
+                "top": 77.20833587646484,
+                "width": 200,
+                "x": 780.375,
+                "y": 77.20833587646484
+            },
+            "post_job_actions": {
+                "RenameDatasetActionsqlite_results": {
+                    "action_arguments": {
+                        "newname": "LC-MSMS spectralMatching result"
+                    },
+                    "action_type": "RenameDatasetAction",
+                    "output_name": "sqlite_results"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/computational-metabolomics/mspurity_spectralmatching/mspurity_spectralmatching/1.16.2+galaxy1",
+            "tool_shed_repository": {
+                "changeset_revision": "20f4fdaf36bb",
+                "name": "mspurity_spectralmatching",
+                "owner": "computational-metabolomics",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"General\": {\"rttol_cond\": {\"rttol_bool\": \"false\", \"__current_case__\": 1}, \"usePrecursors\": \"true\", \"raW\": \"0.5\", \"mzW\": \"2.0\", \"updateDb_cond\": {\"updateDb\": \"true\", \"__current_case__\": 0, \"copyDb\": \"true\"}}, \"Library\": {\"l_dbPth_con\": {\"l_dbPth_select\": \"local_config\", \"__current_case__\": 1}, \"l_filters\": {\"l_ppmPrec\": \"5.0\", \"l_ppmProd\": \"5.0\", \"l_raThres_cond\": {\"l_raThres_bool\": \"false\", \"__current_case__\": 1}, \"l_polarity_cond\": {\"l_polarity_bool\": \"true\", \"__current_case__\": 0, \"l_polarity\": {\"__class__\": \"ConnectedValue\"}}, \"l_purity_cond\": {\"l_purity_bool\": \"false\", \"__current_case__\": 1}, \"l_xcmsGroups_cond\": {\"l_xcmsGroups_bool\": \"false\", \"__current_case__\": 1}, \"l_pids_cond\": {\"l_pids_bool\": \"false\", \"__current_case__\": 1}, \"l_rtrange_cond\": {\"l_rtrange_bool\": \"false\", \"__current_case__\": 1}, \"l_accessions_cond\": {\"l_accessions_bool\": \"false\", \"__current_case__\": 1}, \"l_sources_cond\": {\"l_sources_bool\": \"false\", \"__current_case__\": 1}, \"l_instrumentTypes_cond\": {\"l_instrumentTypes_bool\": \"true\", \"__current_case__\": 0, \"l_instrumentTypes\": [\"APCI-ITFT\", \"APCI-ITTOF\", \"CE-ESI-TOF\", \"ESI-ITFT\", \"ESI-ITTOF\", \"ESI-QFT\", \"ESI-QTOF\", \"ESI-TOF\", \"in source CID\", \"In-silico QTOF\", \"Ion trap\", \"LC-APCI-ITFT\", \"LC-APCI-QTOF\", \"LC-APCI-Q\", \"LC-ESI-IT\", \"LC-ESI-ITFT\", \"LC-ESI-ITTOF\", \"LC-ESI-Q\", \"LC-ESI-QFT\", \"LC-ESI-QIT\", \"LC-ESI-QQ\", \"LC-ESI-QTOF\", \"LC-ESI-TOF\", \"LC-Q-TOF/MS\", \"LC-QTOF\", \"Linear Ion Trap\", \"LIT\", \"MALDI-QIT\", \"MALDI-TOF\", \"MALDI-TOFTOF\", \"orbitrap\", \"QIT\", \"QIT-FT\", \"QIT-TOF\", \"QqQ\", \"Q-TOF\", \"Quattro_QQQ\"], \"l_instrumentTypesUser\": \"\"}, \"l_instruments_cond\": {\"l_instruments_bool\": \"false\", \"__current_case__\": 1}, \"l_spectraTypes_cond\": {\"l_spectraTypes_bool\": \"false\", \"__current_case__\": 1}, \"l_spectraFilter\": \"true\"}}, \"Query\": {\"q_dbPth_con\": {\"q_dbPth_select\": \"sqlite\", \"__current_case__\": 0, \"q_dbPth\": {\"__class__\": \"ConnectedValue\"}}, \"q_filters\": {\"q_ppmPrec\": \"5.0\", \"q_ppmProd\": \"5.0\", \"q_raThres_cond\": {\"q_raThres_bool\": \"false\", \"__current_case__\": 1}, \"q_polarity_cond\": {\"q_polarity_bool\": \"false\", \"__current_case__\": 1}, \"q_purity_cond\": {\"q_purity_bool\": \"false\", \"__current_case__\": 1}, \"q_xcmsGroups_cond\": {\"q_xcmsGroups_bool\": \"false\", \"__current_case__\": 1}, \"q_pids_cond\": {\"q_pids_bool\": \"false\", \"__current_case__\": 1}, \"q_rtrange_cond\": {\"q_rtrange_bool\": \"false\", \"__current_case__\": 1}, \"q_accessions_cond\": {\"q_accessions_bool\": \"false\", \"__current_case__\": 1}, \"q_sources_cond\": {\"q_sources_bool\": \"false\", \"__current_case__\": 1}, \"q_instrumentTypes_cond\": {\"q_instrumentTypes_bool\": \"false\", \"__current_case__\": 1}, \"q_instruments_cond\": {\"q_instruments_bool\": \"false\", \"__current_case__\": 1}, \"q_spectraTypes_cond\": {\"q_spectraTypes_bool\": \"true\", \"__current_case__\": 0, \"q_spectraTypes\": [\"inter\"]}, \"q_spectraFilter\": \"true\"}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.16.2+galaxy1",
+            "type": "tool",
+            "uuid": "1caf6ee0-638d-4832-acb1-cc38340dc712",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "xcms_matches",
+                    "uuid": "c87f587f-17a1-4ece-a4a1-3f29977c549b"
+                },
+                {
+                    "label": null,
+                    "output_name": "matches",
+                    "uuid": "a0d97d47-6175-4a77-9e0d-8e7690c8db79"
+                },
+                {
+                    "label": "LC-MSMS spectralMatching result",
+                    "output_name": "sqlite_results",
+                    "uuid": "35b11a5f-fa91-43d9-adf7-8c9ce5e535f8"
+                }
+            ]
+        },
+        "28": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/computational-metabolomics/sirius_csifingerid/sirius_csifingerid/4.9.8+galaxy4",
+            "errors": null,
+            "id": 28,
+            "input_connections": {
+                "input": {
+                    "id": 26,
+                    "output_name": "multiple"
+                },
+                "polarity": {
+                    "id": 6,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "SIRIUS-CSI:FingerID",
+            "outputs": [
+                {
+                    "name": "canopus_results",
+                    "type": "tsv"
+                },
+                {
+                    "name": "annotation_results",
+                    "type": "tsv"
+                },
+                {
+                    "name": "structure_results",
+                    "type": "tsv"
+                }
+            ],
+            "position": {
+                "bottom": 131.3541717529297,
+                "height": 343.3333435058594,
+                "left": 1069.5625,
+                "right": 1269.5625,
+                "top": -211.9791717529297,
+                "width": 200,
+                "x": 1069.5625,
+                "y": -211.9791717529297
+            },
+            "post_job_actions": {
+                "HideDatasetActionannotation_results": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "annotation_results"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/computational-metabolomics/sirius_csifingerid/sirius_csifingerid/4.9.8+galaxy4",
+            "tool_shed_repository": {
+                "changeset_revision": "8dac4cef0a22",
+                "name": "sirius_csifingerid",
+                "owner": "computational-metabolomics",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"adducts_cond\": {\"adducts_selector\": \"msp\", \"__current_case__\": 0}, \"candidates\": \"5\", \"database\": \"BIO\", \"input\": {\"__class__\": \"ConnectedValue\"}, \"meta_select_col\": \"name_split\", \"min_MSMS_peaks\": \"0\", \"polarity\": {\"__class__\": \"ConnectedValue\"}, \"ppm_max\": \"5\", \"profile\": \"orbitrap\", \"schema\": \"auto\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "4.9.8+galaxy4",
+            "type": "tool",
+            "uuid": "de0862c7-89ed-4252-a002-56198cd3eba5",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "structure_results",
+                    "uuid": "c127c575-ec47-457c-b877-b3bd14151ce9"
+                },
+                {
+                    "label": null,
+                    "output_name": "canopus_results",
+                    "uuid": "ccf19057-f35a-4fb8-8fe4-af0a500ce5aa"
+                }
+            ]
+        },
+        "29": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/computational-metabolomics/metfrag/metfrag/2.4.5+galaxy3",
+            "errors": null,
+            "id": 29,
+            "input_connections": {
+                "input": {
+                    "id": 26,
+                    "output_name": "multiple"
+                },
+                "polarity": {
+                    "id": 7,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "MetFrag",
+            "outputs": [
+                {
+                    "name": "results",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "bottom": -257.6666564941406,
+                "height": 143.33334350585938,
+                "left": 1053.5,
+                "right": 1253.5,
+                "top": -401,
+                "width": 200,
+                "x": 1053.5,
+                "y": -401
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/computational-metabolomics/metfrag/metfrag/2.4.5+galaxy3",
+            "tool_shed_repository": {
+                "changeset_revision": "f151ee133612",
+                "name": "metfrag",
+                "owner": "computational-metabolomics",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"DatabaseSearchRelativeMassDeviation\": \"5.0\", \"FragmentPeakMatchAbsoluteMassDeviation\": \"0.001\", \"FragmentPeakMatchRelativeMassDeviation\": \"5.0\", \"PostProcessFilter\": {\"score_thrshld\": \"0.6\", \"pctexplpeak_thrshld\": \"10.0\"}, \"PreProcessFilter\": {\"UnconnectedCompoundFilter\": \"false\", \"IsotopeFilter\": \"false\", \"FilterMinimumElements\": \"\", \"FilterMaximumElements\": \"\", \"FilterSmartsInclusionList\": \"\", \"FilterSmartsExclusionList\": \"\", \"FilterIncludedElements\": \"\", \"FilterIncludedExclusiveElements\": \"\", \"FilterExcludedElements\": \"\"}, \"adducts_cond\": {\"adducts_selector\": \"msp\", \"__current_case__\": 0}, \"db_select\": {\"MetFragDatabaseType\": \"MetChem\", \"__current_case__\": 0, \"LocalMetChemDatabaseServerIp\": \"bberdb.bb2.cluster\"}, \"input\": {\"__class__\": \"ConnectedValue\"}, \"meta_select_col\": \"name_split\", \"minMSMSpeaks\": \"1\", \"output_cl\": \"false\", \"polarity\": {\"__class__\": \"ConnectedValue\"}, \"schema\": \"auto\", \"skip_invalid_adducts\": \"true\", \"suspectlist\": {\"suspectselector\": \"includesuspects\", \"__current_case__\": 0, \"includesuspects_default_cond\": {\"includesuspects_default_bool\": \"true\", \"__current_case__\": 0}, \"MetFragScoreTypes\": [\"FragmenterScore\", \"OfflineMetFusionScore\", \"SuspectListScore\"], \"MetFragScoreWeights\": \"0.2,0.3,0.5\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "2.4.5+galaxy3",
+            "type": "tool",
+            "uuid": "7d63e086-653b-4bd0-9c3f-ea477006af42",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "results",
+                    "uuid": "4a001e4f-60ce-4f10-994d-b9401dcdbbb3"
+                }
+            ]
+        },
+        "30": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/nml/collapse_collections/collapse_dataset/4.0",
+            "errors": null,
+            "id": 30,
+            "input_connections": {
+                "input_list": {
+                    "id": 28,
+                    "output_name": "structure_results"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Collapse Collection",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "bottom": 45.41667175292969,
+                "height": 153.33334350585938,
+                "left": 1699.791748046875,
+                "right": 1899.791748046875,
+                "top": -107.91667175292969,
+                "width": 200,
+                "x": 1699.791748046875,
+                "y": -107.91667175292969
+            },
+            "post_job_actions": {
+                "DeleteIntermediatesActionoutput": {
+                    "action_arguments": {},
+                    "action_type": "DeleteIntermediatesAction",
+                    "output_name": "output"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/nml/collapse_collections/collapse_dataset/4.0",
+            "tool_shed_repository": {
+                "changeset_revision": "25136a2b0cfe",
+                "name": "collapse_collections",
+                "owner": "nml",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"filename\": {\"add_name\": \"false\", \"__current_case__\": 1}, \"input_list\": {\"__class__\": \"ConnectedValue\"}, \"one_header\": \"false\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "4.0",
+            "type": "tool",
+            "uuid": "94d84ee5-d980-470c-b7f9-a2509be66d87",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "2185ed22-830f-4813-9b4b-b6410dd738bf"
+                }
+            ]
+        },
+        "31": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/column_arrange_by_header/bg_column_arrange_by_header/0.2",
+            "errors": null,
+            "id": 31,
+            "input_connections": {
+                "param_input": {
+                    "id": 29,
+                    "output_name": "results"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Column arrange",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "bottom": -306.31250762939453,
+                "height": 93.33333587646484,
+                "left": 1609.375,
+                "right": 1809.375,
+                "top": -399.6458435058594,
+                "width": 200,
+                "x": 1609.375,
+                "y": -399.6458435058594
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/column_arrange_by_header/bg_column_arrange_by_header/0.2",
+            "tool_shed_repository": {
+                "changeset_revision": "6c6d26ff01ff",
+                "name": "column_arrange_by_header",
+                "owner": "bgruening",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"discard_remaining\": \"false\", \"param_input\": {\"__class__\": \"ConnectedValue\"}, \"rep_param_columns\": [{\"__index__\": 0, \"param_column\": \"sample_name\"}, {\"__index__\": 1, \"param_column\": \"MZ\"}, {\"__index__\": 2, \"param_column\": \"grpid\"}, {\"__index__\": 3, \"param_column\": \"RT\"}, {\"__index__\": 4, \"param_column\": \"adduct\"}, {\"__index__\": 5, \"param_column\": \"CompoundName\"}, {\"__index__\": 6, \"param_column\": \"ExplPeaks\"}, {\"__index__\": 7, \"param_column\": \"FormulasOfExplPeaks\"}, {\"__index__\": 8, \"param_column\": \"FragmenterScore\"}, {\"__index__\": 9, \"param_column\": \"FragmenterScore_Values\"}, {\"__index__\": 10, \"param_column\": \"Identifier\"}, {\"__index__\": 11, \"param_column\": \"InChI\"}, {\"__index__\": 12, \"param_column\": \"InChIKey\"}, {\"__index__\": 13, \"param_column\": \"InChIKey1\"}, {\"__index__\": 14, \"param_column\": \"InChIKey2\"}, {\"__index__\": 15, \"param_column\": \"InChIKey3\"}, {\"__index__\": 16, \"param_column\": \"MaximumTreeDepth\"}, {\"__index__\": 17, \"param_column\": \"MolecularFormula\"}, {\"__index__\": 18, \"param_column\": \"MonoisotopicMass\"}, {\"__index__\": 19, \"param_column\": \"NoExplPeaks\"}, {\"__index__\": 20, \"param_column\": \"NumberPeaksUsed\"}], \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "0.2",
+            "type": "tool",
+            "uuid": "2bc094ce-30a2-49b4-9880-66ab1f1cae4d",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "ae87a580-f690-4e37-a2a1-3e59a4bc76a6"
+                }
+            ]
+        },
+        "32": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/galaxyp/regex_find_replace/regex1/1.0.1",
+            "errors": null,
+            "id": 32,
+            "input_connections": {
+                "input": {
+                    "id": 30,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Regex Find And Replace",
+            "outputs": [
+                {
+                    "name": "out_file1",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "bottom": -49.31250762939453,
+                "height": 113.33333587646484,
+                "left": 2433.104248046875,
+                "right": 2633.104248046875,
+                "top": -162.64584350585938,
+                "width": 200,
+                "x": 2433.104248046875,
+                "y": -162.64584350585938
+            },
+            "post_job_actions": {
+                "DeleteIntermediatesActionout_file1": {
+                    "action_arguments": {},
+                    "action_type": "DeleteIntermediatesAction",
+                    "output_name": "out_file1"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/galaxyp/regex_find_replace/regex1/1.0.1",
+            "tool_shed_repository": {
+                "changeset_revision": "ae8c4b2488e7",
+                "name": "regex_find_replace",
+                "owner": "galaxyp",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"checks\": [{\"__index__\": 0, \"pattern\": \"CSI:FingerIDScore\", \"replacement\": \"Score\"}], \"input\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.0.1",
+            "type": "tool",
+            "uuid": "f403bd04-930d-4d64-a6ae-20c8aa274e53",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "out_file1",
+                    "uuid": "c15493ab-9bea-451d-a692-1315c2b750bd"
+                }
+            ]
+        },
+        "33": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/nml/collapse_collections/collapse_dataset/4.0",
+            "errors": null,
+            "id": 33,
+            "input_connections": {
+                "input_list": {
+                    "id": 31,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": "Collapse collection - LC-MSMS Metfrag result",
+            "name": "Collapse Collection",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "bottom": -263.6458435058594,
+                "height": 193.33334350585938,
+                "left": 2197.52099609375,
+                "right": 2397.52099609375,
+                "top": -456.97918701171875,
+                "width": 200,
+                "x": 2197.52099609375,
+                "y": -456.97918701171875
+            },
+            "post_job_actions": {
+                "DeleteIntermediatesActionoutput": {
+                    "action_arguments": {},
+                    "action_type": "DeleteIntermediatesAction",
+                    "output_name": "output"
+                },
+                "RenameDatasetActionoutput": {
+                    "action_arguments": {
+                        "newname": "LC-MSMS Metfrag result"
+                    },
+                    "action_type": "RenameDatasetAction",
+                    "output_name": "output"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/nml/collapse_collections/collapse_dataset/4.0",
+            "tool_shed_repository": {
+                "changeset_revision": "25136a2b0cfe",
+                "name": "collapse_collections",
+                "owner": "nml",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"filename\": {\"add_name\": \"false\", \"__current_case__\": 1}, \"input_list\": {\"__class__\": \"ConnectedValue\"}, \"one_header\": \"true\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "4.0",
+            "type": "tool",
+            "uuid": "47c8be0d-a648-46e1-becd-7370dd218813",
+            "workflow_outputs": [
+                {
+                    "label": "LC-MSMS Metfrag result",
+                    "output_name": "output",
+                    "uuid": "4a8fb809-1794-46f2-8b83-751ef0c8cf81"
+                }
+            ]
+        },
+        "34": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/computational-metabolomics/mspurity_combineannotations/mspurity_combineannotations/1.16.2+galaxy1",
+            "errors": null,
+            "id": 34,
+            "input_connections": {
+                "metfrag_resultPth": {
+                    "id": 33,
+                    "output_name": "output"
+                },
+                "ms1_lookup_keepAdducts": {
+                    "id": 0,
+                    "output_name": "output"
+                },
+                "ms1_lookup_resultPth": {
+                    "id": 25,
+                    "output_name": "out_file1"
+                },
+                "sirius_csi_resultPth": {
+                    "id": 32,
+                    "output_name": "out_file1"
+                },
+                "sm_resultPth": {
+                    "id": 27,
+                    "output_name": "sqlite_results"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "msPurity.combineAnnotations",
+            "outputs": [
+                {
+                    "name": "combined_annotations_sqlite",
+                    "type": "sqlite"
+                },
+                {
+                    "name": "combined_annotations_tsv",
+                    "type": "tsv"
+                }
+            ],
+            "position": {
+                "bottom": -853.1459045410156,
+                "height": 423.3333435058594,
+                "left": 2819.39599609375,
+                "right": 3019.39599609375,
+                "top": -1276.479248046875,
+                "width": 200,
+                "x": 2819.39599609375,
+                "y": -1276.479248046875
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/computational-metabolomics/mspurity_combineannotations/mspurity_combineannotations/1.16.2+galaxy1",
+            "tool_shed_repository": {
+                "changeset_revision": "d7104112fac6",
+                "name": "mspurity_combineannotations",
+                "owner": "computational-metabolomics",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"biosim_weight\": \"0.05\", \"compoundDbTypeCond\": {\"compoundDbType\": \"local_config\", \"__current_case__\": 1}, \"create_new_database\": \"true\", \"metfrag_resultPth\": {\"__class__\": \"ConnectedValue\"}, \"metfrag_weight\": \"0.15\", \"ms1_lookup_checkAdducts\": \"false\", \"ms1_lookup_dbSource\": \"hmdb\", \"ms1_lookup_keepAdducts\": {\"__class__\": \"ConnectedValue\"}, \"ms1_lookup_resultPth\": {\"__class__\": \"ConnectedValue\"}, \"ms1_lookup_weight\": \"0.1\", \"probmetabCond\": {\"probmetabChoice\": \"no_probmetab\", \"__current_case__\": 1}, \"probmetab_weight\": \"0.0\", \"sirius_csi_resultPth\": {\"__class__\": \"ConnectedValue\"}, \"sirius_csi_weight\": \"0.25\", \"sm_resultPth\": {\"__class__\": \"ConnectedValue\"}, \"sm_weight\": \"0.45\", \"summaryOutput\": \"true\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.16.2+galaxy1",
+            "type": "tool",
+            "uuid": "b1e6c940-2e55-4e13-b5df-54f93730e902",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "combined_annotations_tsv",
+                    "uuid": "dfca8ac7-577d-4148-9251-eada3d9997f7"
+                },
+                {
+                    "label": null,
+                    "output_name": "combined_annotations_sqlite",
+                    "uuid": "a4cea115-a270-40a2-a690-9879354fe2f8"
+                }
+            ]
+        }
+    },
+    "tags": [],
+    "uuid": "9abdae27-0025-4526-8a85-9677fc5b3811",
+    "version": 3
+}
