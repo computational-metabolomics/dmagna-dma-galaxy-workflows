@@ -22,7 +22,7 @@ The three workflows are:
 
 ## Availability and Access
 
-Complete Galaxy workflows, analysis histories, and detailed tool version information are accessible through the dedicated Galaxy instances at https://dma.galaxy.bham.ac.uk/histories/list_published and https://dma.galaxy.bham.ac.uk/workflows/list_published. The workflows are also downloadable from this repository under the GPL-3.0 license. 
+Complete Galaxy workflows, analysis histories, and detailed tool version information are accessible through the dedicated Galaxy instance at https://dma.galaxy.bham.ac.uk/histories/list_published and https://dma.galaxy.bham.ac.uk/workflows/list_published. The workflows are also downloadable from this repository under the GPL-3.0 license. 
 
 These resources encompass the complete Galaxy workflow analysis; however, re-running all analyses of the DMA of *D. magna*, especially outside of the provided Galaxy instances, would require additional setup due to both the high computational resource demands of this large dataset, as well as software updates to some of the underlying Galaxy tools since the analysis in this manuscript was performed.
 
