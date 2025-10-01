@@ -6,13 +6,19 @@ The three Galaxy workflows used for the *Daphnia magna* deep metabolome annotati
 
 These Galaxy workflows were specifically developed to handle and conduct metabolite annotation across the diverse data types generated, encompassing (U)HPLC-HRMS(/MS) and DI-HRMS(MSn) from LC fractionation. By leveraging the extensive replication provided by the experimental workflow, data averaging and filtering were applied to both (U)HPLC-HRMS(/MS) and DI-HRMS(MSn) datasets to ensure that high-quality, reproducible fragment peaks were utilized for various complementary computational metabolite annotation strategies.
 
+**Abbreviations:**
+- (U)HPLC-HRMS(/MS): (Ultra)high-performance liquid chromatography-high resolution tandem mass spectrometry
+- DI-HRMS(MSn): Direct infusion-high resolution mass spectrometry with multiple-stage fragmentation
+
+
+
 ## Workflows
 
 The three workflows are:
 
 - **W1 (Galaxy-Workflow-W1_LC-MSMS_DIMS_DIMSn_FRAC_DMA.ga)**: Full (U)HPLC-HRMS(/MS) and DI-HRMS(MSn) from the LC fractionation
 - **W2 (Galaxy-Workflow-W2_LC-MSMS_DMA.ga)**: Just (U)HPLC-HRMS(/MS) analysis
-- **W3 (Galaxy-Workflow-W3_LC-MSMS_MSM_DMA.ga)**: (U)HPLC-HRMS(/MS) specifically for the metabolite standard mixture used to assess the performance of the full experimental and computational DMA workflow
+- **W3 (Galaxy-Workflow-W3_LC-MSMS_MSM_DMA.ga)**: (U)HPLC-HRMS(/MS) specifically for the analysis of the metabolite standard mixture (MSM) used to assess the performance of the full experimental and computational DMA workflow
 
 ## Availability and Access
 
